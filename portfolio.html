@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio — GrowStack</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo">Grow<span class="dot-o">●</span>Stack</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html" class="active">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Work With Us</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <section class="page-hero">
+    <div class="page-hero-glow"></div>
+    <div class="container">
+      <span class="section-tag reveal">Our Work</span>
+      <h1 class="reveal">Portfolio <span class="orange">Showcase</span></h1>
+      <p class="page-hero-sub reveal">Concept ads crafted for real niches. Every piece built to show what AI-powered creativity can do for your brand.</p>
+    </div>
+  </section>
+
+  <!-- FILTER -->
+  <section class="section" style="padding-bottom:0">
+    <div class="container">
+      <div class="filter-bar reveal">
+        <button class="filter-btn active" data-filter="all">All Work</button>
+        <button class="filter-btn" data-filter="food">Food & Restaurants</button>
+        <button class="filter-btn" data-filter="beauty">Beauty & Salons</button>
+        <button class="filter-btn" data-filter="fashion">Fashion</button>
+        <button class="filter-btn" data-filter="home">Home Decor</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO GRID -->
+  <section class="section">
+    <div class="container">
+      <div class="portfolio-grid" id="portfolioGrid">
+
+        <!-- FOOD CARDS -->
+        <div class="portfolio-card reveal" data-category="food">
+          <div class="port-img port-food-1" style="background-image:url('images/food-1.jpg');background-size:cover;background-position:center">
+            <div class="port-overlay">
+              <span class="port-tag">Product Ad</span>
+              <p>Barbeque Nation — Live Grill Hero Shot</p>
+            </div>
+          </div>
+          <div class="port-info">
+            <span class="port-niche">🍕 Food</span>
+            <h4>Live Grill Hero Ad</h4>
+            <p>Cinematic product shot — dark moody lighting, ember glow.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-category="food">
+          <div class="port-img port-food-2" style="background-image:url('images/food-2.jpg');background-size:cover;background-position:center">
+            <div class="port-overlay">
+              <span class="port-tag">Festive Ad</span>
+              <p>Barbeque Nation — Diwali Special</p>
+            </div>
+          </div>
+          <div class="port-info">
+            <span class="port-niche">🍕 Food</span>
+            <h4>Diwali Festive Offer</h4>
+            <p>Diya glow, marigold warmth — festive Indian celebration aesthetic.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-category="food">
+          <div class="port-img port-food-3" style="background-image:url('images/food-3.jpg');background-size:cover;background-position:center">
+            <div class="port-overlay">
+              <span class="port-tag">Offer Ad</span>
+              <p>BBQ Nation — Weekend Feast Sale</p>
+            </div>
+          </div>
+          <div class="port-info">
+            <span class="port-niche">🍕 Food</span>
+            <h4>Weekend Feast Offer</h4>
+            <p>Bold sale badge, editorial dark style, strong CTA.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-category="food">
+          <div class="port-img port-food-4" style="background-image:url('images/food-4.jpg');background-size:cover;background-position:center">
+            <div class="port-overlay">
+              <span class="port-tag">New Launch</span>
+              <p>BBQ Nation — Butter Chicken Grill Burger</p>
+            </div>
+          </div>
+          <div class="port-info">
+            <span class="port-niche">🍕 Food</span>
+            <h4>New Launch Drop Ad</h4>
+            <p>Hero product backlight, bold typography, Gen-Z energy with premium feel.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-category="food">
+          <div class="port-img port-food-5" style="background-image:url('images/food-5.jpg');background-size:cover;background-position:center">
+            <div class="port-overlay">
+              <span class="port-tag">UGC Ad</span>
+              <p>BBQ Nation — Customer Review Ad</p>
+            </div>
+          </div>
+          <div class="port-info">
+            <span class="port-niche">🍕 Food</span>
+            <h4>Customer Review UGC</h4>
+            <p>Candid couple shot, live grill foreground, warm restaurant light, 5-star review overlay.</p>
+          </div>
+        </div>
+
+        <!-- BEAUTY CARDS -->
+        <div class="portfolio-card reveal" data-category="beauty">
+          <div class="port-img port-beauty-1" style="background-image:url('images/beauty-1.jpg');background-size:cover;background-position:center">
+            <div class="port-overlay">
+              <span class="port-tag">Product Ad</span>
+              <p>Lakme Salon — Glass Skin Treatment</p>
+            </div>
+          </div>
+          <div class="port-info">
+            <span class="port-niche">💄 Beauty</span>
+            <h4>Glass Skin Hero Ad</h4>
+            <p>Ultra-close macro beauty shot, ring light catchlight, magenta palette.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-category="beauty">
+          <div class="port-img port-beauty-2" style="background-image:url('images/beauty-2.jpg');background-size:cover;background-position:center">
+            <div class="port-overlay">
+              <span class="port-tag">Festive Ad</span>
+              <p>Lakme Salon — Navratri Campaign</p>
+            </div>
+          </div>
+          <div class="port-info">
+            <span class="port-niche">💄 Beauty</span>
+            <h4>Navratri Ready Campaign</h4>
+            <p>Bold festive makeup, ethnic wardrobe, golden backlight halo.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-category="beauty">
+          <div class="port-img port-beauty-3" style="background-image:url('images/beauty-3.jpg');background-size:cover;background-position:center">
+            <div class="port-overlay">
+              <span class="port-tag">Bridal Ad</span>
+              <p>Lakme — Bridal Studio Launch</p>
+            </div>
+          </div>
+          <div class="port-info">
+            <span class="port-niche">💄 Beauty</span>
+            <h4>Bridal Studio Ad</h4>
+            <p>Golden hour bridal editorial, luxury feel, emotional CTA.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-category="beauty">
+          <div class="port-img port-beauty-4" style="background-image:url('images/beauty-4.jpg');background-size:cover;background-position:center">
+            <div class="port-overlay">
+              <span class="port-tag">New Launch</span>
+              <p>Lakme — Korean Glass Facial Launch</p>
+            </div>
+          </div>
+          <div class="port-info">
+            <span class="port-niche">💄 Beauty</span>
+            <h4>Korean Glass Facial Ad</h4>
+            <p>Split-screen before/after, clinical meets luxury, magenta divider line.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-category="beauty">
+          <div class="port-img port-beauty-5" style="background-image:url('images/beauty-5.jpg');background-size:cover;background-position:center">
+            <div class="port-overlay">
+              <span class="port-tag">Offer Ad</span>
+              <p>Lakme — Monsoon Glow Sale</p>
+            </div>
+          </div>
+          <div class="port-info">
+            <span class="port-niche">💄 Beauty</span>
+            <h4>Monsoon Glow Sale</h4>
+            <p>Luxury flat lay, rose petals on marble, bold 40% off badge in magenta.</p>
+          </div>
+        </div>
+
+        <!-- FASHION CARDS -->
+        <div class="portfolio-card reveal" data-category="fashion">
+          <div class="port-img port-fashion-1" style="background-image:url('images/fashion-1.jpg');background-size:cover;background-position:center">
+            <div class="port-overlay">
+              <span class="port-tag">Product Ad</span>
+              <p>FabIndia — Linen Co-ords Collection</p>
+            </div>
+          </div>
+          <div class="port-info">
+            <span class="port-niche">👗 Fashion</span>
+            <h4>Linen Collection Drop</h4>
+            <p>Heritage haveli setting, golden hour fabric flow, artisan aesthetic.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-category="fashion">
+          <div class="port-img port-fashion-2" style="background-image:url('images/fashion-2.jpg');background-size:cover;background-position:center">
+            <div class="port-overlay">
+              <span class="port-tag">Festive Ad</span>
+              <p>FabIndia — Pongal Campaign</p>
+            </div>
+          </div>
+          <div class="port-info">
+            <span class="port-niche">👗 Fashion</span>
+            <h4>Pongal Festive Campaign</h4>
+            <p>South Indian cultural editorial, sunrise light, traditional props.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-category="fashion">
+          <div class="port-img port-fashion-3" style="background-image:url('images/fashion-3.jpg');background-size:cover;background-position:center">
+            <div class="port-overlay">
+              <span class="port-tag">Offer Ad</span>
+              <p>FabIndia — Season End Sale</p>
+            </div>
+          </div>
+          <div class="port-info">
+            <span class="port-niche">👗 Fashion</span>
+            <h4>Season End Sale Ad</h4>
+            <p>Artisan craft flat lay, saffron & teal fabrics, bold 50% off badge.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-category="fashion">
+          <div class="port-img port-fashion-4" style="background-image:url('images/fashion-4.jpg');background-size:cover;background-position:center">
+            <div class="port-overlay">
+              <span class="port-tag">New Collection</span>
+              <p>FabIndia — Earth & Thread Collection</p>
+            </div>
+          </div>
+          <div class="port-info">
+            <span class="port-niche">👗 Fashion</span>
+            <h4>New Collection Drop</h4>
+            <p>Three models in pottery studio, terracotta & sage tones, artisan aesthetic.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-category="fashion">
+          <div class="port-img port-fashion-5" style="background-image:url('images/fashion-5.jpg');background-size:cover;background-position:center">
+            <div class="port-overlay">
+              <span class="port-tag">UGC Ad</span>
+              <p>FabIndia — Customer Lifestyle Ad</p>
+            </div>
+          </div>
+          <div class="port-info">
+            <span class="port-niche">👗 Fashion</span>
+            <h4>Customer Lifestyle UGC</h4>
+            <p>Candid market walk, block-print kurta, natural afternoon light, real review overlay.</p>
+          </div>
+        </div>
+
+        <!-- HOME DECOR CARDS -->
+        <div class="portfolio-card reveal" data-category="home">
+          <div class="port-img port-home-1" style="background-image:url('images/home-1.jpg');background-size:cover;background-position:center">
+            <div class="port-overlay">
+              <span class="port-tag">Product Ad</span>
+              <p>Pepperfry — Japandi Collection</p>
+            </div>
+          </div>
+          <div class="port-info">
+            <span class="port-niche">🏠 Home Decor</span>
+            <h4>Japandi Collection Hero</h4>
+            <p>Minimalist morning light, teak table, lifestyle interior edit.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-category="home">
+          <div class="port-img port-home-2" style="background-image:url('images/home-2.jpg');background-size:cover;background-position:center">
+            <div class="port-overlay">
+              <span class="port-tag">Festive Ad</span>
+              <p>Pepperfry — Dussehra Home Edit</p>
+            </div>
+          </div>
+          <div class="port-info">
+            <span class="port-niche">🏠 Home Decor</span>
+            <h4>Dussehra Home Refresh Ad</h4>
+            <p>Marigold + diya warmth, festive home decor styling, cinematic grade.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-category="home">
+          <div class="port-img port-home-3" style="background-image:url('images/home-3.jpg');background-size:cover;background-position:center">
+            <div class="port-overlay">
+              <span class="port-tag">Before/After</span>
+              <p>Pepperfry — Room Transformation</p>
+            </div>
+          </div>
+          <div class="port-info">
+            <span class="port-niche">🏠 Home Decor</span>
+            <h4>Room Transformation Ad</h4>
+            <p>Split-screen before/after, orange divider, transformation story.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-category="home">
+          <div class="port-img port-home-4" style="background-image:url('images/home-4.jpg');background-size:cover;background-position:center">
+            <div class="port-overlay">
+              <span class="port-tag">Offer Ad</span>
+              <p>Pepperfry — Big Sale Ad</p>
+            </div>
+          </div>
+          <div class="port-info">
+            <span class="port-niche">🏠 Home Decor</span>
+            <h4>Big Pepperfry Sale Ad</h4>
+            <p>Luxe living room scene, bold orange 55% off badge, warm sheer curtain light.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-category="home">
+          <div class="port-img port-home-5" style="background-image:url('images/home-5.jpg');background-size:cover;background-position:center">
+            <div class="port-overlay">
+              <span class="port-tag">UGC Ad</span>
+              <p>Pepperfry — Customer Home Reveal</p>
+            </div>
+          </div>
+          <div class="port-info">
+            <span class="port-niche">🏠 Home Decor</span>
+            <h4>Customer Home Reveal UGC</h4>
+            <p>Homeowner candid reveal, delivery box prop, warm natural window light, 5-star review.</p>
+          </div>
+        </div>
+
+      </div> reveal">
+        ⚠️ <strong>Portfolio Disclaimer:</strong> All ads above are concept pieces created for portfolio purposes only. Brand names and imagery used to simulate real-world client work. Not affiliated with any mentioned brand.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner reveal">
+    <div class="container">
+      <div class="cta-inner">
+        <h2>Want ads like these for your brand?</h2>
+        <p>Let's build something amazing together.</p>
+        <a href="contact.html" class="btn-primary">Get In Touch →</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="nav-logo" style="font-size:1.5rem">Grow<span class="dot-o">●</span>Stack</div>
+          <p>AI-powered social media & marketing for small businesses across India.</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/grow.stack26?igsh=dXY3YjI3OGQyMDU5" target="_blank" class="social-btn">Instagram →</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 GrowStack. All rights reserved.</span>
+        <span>Made with AI & ambition 🔥</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

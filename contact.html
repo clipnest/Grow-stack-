@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — GrowStack</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo">Grow<span class="dot-o">●</span>Stack</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Work With Us</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <section class="page-hero">
+    <div class="page-hero-glow"></div>
+    <div class="container">
+      <span class="section-tag reveal">Let's Talk</span>
+      <h1 class="reveal">Get In <span class="orange">Touch</span></h1>
+      <p class="page-hero-sub reveal">Ready to grow your brand? Drop us a message — we'll get back within 24 hours.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-layout">
+
+        <div class="contact-info reveal">
+          <h2>Let's build something <span class="orange">great together.</span></h2>
+          <p>Whether you're a local restaurant, salon, boutique or home brand — we have a plan that fits your budget and goals.</p>
+
+          <div class="contact-methods">
+            <a href="https://www.instagram.com/grow.stack26?igsh=dXY3YjI3OGQyMDU5" target="_blank" class="contact-method">
+              <div class="cm-icon">📸</div>
+              <div>
+                <span class="cm-label">Instagram DM</span>
+                <span class="cm-val">@growstack</span>
+              </div>
+              <span class="cm-arrow">→</span>
+            </a>
+            <a href="https://wa.me/917499397925" target="_blank" class="contact-method">
+              <div class="cm-icon">💬</div>
+              <div>
+                <span class="cm-label">WhatsApp</span>
+                <span class="cm-val">+91 XXXXX XXXXX</span>
+              </div>
+              <span class="cm-arrow">→</span>
+            </a>
+            <a href="mailto:growstack26@gmail.com" class="contact-method">
+              <div class="cm-icon">✉️</div>
+              <div>
+                <span class="cm-label">Email</span>
+                <span class="cm-val">hello@growstack.in</span>
+              </div>
+              <span class="cm-arrow">→</span>
+            </a>
+          </div>
+
+          <div class="contact-note">
+            <span class="badge-dot"></span>
+            Usually replies within <strong>2 hours</strong> on Instagram DM
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" placeholder="Rahul Sharma" required/>
+            </div>
+            <div class="form-group">
+              <label>Business Name</label>
+              <input type="text" placeholder="Sharma Sweets, Mumbai" required/>
+            </div>
+            <div class="form-group">
+              <label>Instagram Handle</label>
+              <input type="text" placeholder="@yourbrand"/>
+            </div>
+            <div class="form-group">
+              <label>Which package interests you?</label>
+              <select>
+                <option value="">Select a plan</option>
+                <option>Starter — ₹4,000/mo</option>
+                <option>Growth — ₹8,000/mo</option>
+                <option>Pro — ₹15,000/mo</option>
+                <option>Not sure yet — just exploring</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Tell us about your brand</label>
+              <textarea placeholder="What does your business do? What's your goal on Instagram?" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn-primary" style="width:100%">Send Message →</button>
+            <p class="form-note">Or just DM us on <a href="https://instagram.com/growstack" target="_blank">@growstack</a> — even faster!</p>
+          </form>
+          <div class="form-success" id="formSuccess" style="display:none">
+            <div class="success-icon">🎉</div>
+            <h3>Message Sent!</h3>
+            <p>We'll get back to you within 24 hours. Meanwhile, follow us on Instagram!</p>
+            <a href="https://www.instagram.com/grow.stack26?igsh=dXY3YjI3OGQyMDU5" target="_blank" class="btn-primary">Follow @growstack</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="nav-logo" style="font-size:1.5rem">Grow<span class="dot-o">●</span>Stack</div>
+          <p>AI-powered social media & marketing for small businesses across India.</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-social">
+          <a href="https://instagram.com/growstack" target="_blank" class="social-btn">Instagram →</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 GrowStack. All rights reserved.</span>
+        <span>Made with AI & ambition 🔥</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
